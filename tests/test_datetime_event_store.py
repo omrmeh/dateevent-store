@@ -4,6 +4,8 @@ import sys, os
 # ajoute le dossier parent à la racine des imports
 sys.path.insert(0, os.path.abspath(os.path.join(__file__, "..", "..")))
 
+from datetime_event_store import DateTimeEventStore
+
 
 def test_store_and_get_events_empty():
     store = DateTimeEventStore()
